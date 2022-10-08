@@ -1,0 +1,76 @@
+.jacket-main h1 {
+  text-align: center;
+}
+
+.jacket-main-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.jacket-left {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jacket-img-big {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.jacket-img-big img {
+  max-width: 300px;
+}
+
+.jacket-img-small {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.jacket-img-small img {
+  max-width: 98px;
+}
+
+.jacket-right {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.jacket-copy {
+  width: 300px;
+  width: 100%;
+}
+
+.jacket-choices {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 300px;
+  margin-top: 30px;
+}
+
+#quantity {
+  width: 35px;
+}
+
+.jacket-choices > * {
+  margin: 10px 0 0 0;
+}
+
+.jacket-choices select {
+  width: 100px;
+  height: 30px;
+}
+
+.add-cta-button {
+  width: 100px;
+  height: 40px;
+  margin-top: 30px;
+}

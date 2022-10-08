@@ -1,0 +1,45 @@
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact-top {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-bottom {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-cta-button {
+  width: 50px;
+  margin-top: 20px;
+}
+
+.contact form input {
+  margin-bottom: 20px;
+}

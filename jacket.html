@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy the classic Rainydays rain jacket">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1eb31d1de3.js" crossorigin="anonymous"></script>
+    
+<!-- Hotjar Tracking Code for https://dreamy-sammet-d62ddc.netlify.app/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3162222,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+    <title>Rainydays - The Rainydays' Classic rain jacket</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <a href="index.html">Rainydays</a>
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li><a href="mens.html">Men's</a></li>
+            <li><a href="womens.html" class="current">Women's</a></li>
+            <li class="nav-divider"> | </li>
+            <li><input type="text" placeholder="Search" id="search"></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-divider"> | </li>
+          </ul>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="Cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
+            <label for="hamburger-menu" class="navburger"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <nav>
+              <ul>
+                <li><a href="mens.html">Men's</a></li>
+                <li><a href="womens.html">Women's</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+        </div>
+      </nav>
+    </header>
+    <main class="jacket-main">
+        <h1>Rainydays Classic</h1>
+        <section class="jacket-main-container">
+            <section class="jacket-left">
+                <figure class="jacket-img-big">
+                    <img src="images/jacket1.jpg" alt="Woman in yellow rain jacket">
+                </figure>
+                <figure class="jacket-img-small">
+                    <img src="images/jacket1.jpg" alt="Woman in yellow rain jacket">
+                    <img src="images/jacket1.jpg" alt="Woman in yellow rain jacket">
+                    <img src="images/jacket1.jpg" alt="Woman in yellow rain jacket">
+                </figure>
+            </section>
+            <section class="jacket-right">
+                <div class="jacket-copy">
+                    <p>This jacket is awesome, and lorem ipsum, dorothea matilde dumbledore.</p>
+                    <strong>Price: 500kr</strong>
+                </div>
+                <form action="submit.php" method="GET" class="jacket-choices">
+                    <label>Jacket color:</label>
+                    <select name="colors" id="colors">
+                        <option value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                    </select>
+                    <label>Jacket size:</label>
+                    <select name="sizes" id="sizes">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity">
+                    <input type="submit" class="add-cta-button" value="Add">
+                </form>
+
+                </div>
+            </section>
+        </section>
+        <section class="jacket-info-container">
+            <div class="jacket-info-left">
+
+            </div>
+            <div class="jecket-info-right">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+      <img src="images/brand-logo.png" alt="Brand logo">
+      <p>Copyright &copy; 2022</p>
+    </footer>
+  </body>
+</html>

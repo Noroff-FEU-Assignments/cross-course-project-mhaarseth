@@ -1,0 +1,51 @@
+.about h1 {
+  text-align: center;
+}
+
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  gap: 20px;
+}
+
+.about-left {
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.about-right {
+  max-width: 600px;
+  display: flex;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.about-copy-who,
+.about-copy-what,
+.about-copy-why {
+  max-width: 300px;
+  width: 100%;
+  margin: 20px 50px;
+}
+
+.about-left h2 {
+  margin: 0;
+}
+
+.about-image {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.about-right img {
+  width: 100%;
+}

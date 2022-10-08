@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rainydays cart and checkout" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1eb31d1de3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Hotjar Tracking Code for https://dreamy-sammet-d62ddc.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3162222, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <title>Rainydays - Cart and checkout</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <a href="index.html">Rainydays</a>
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li><a href="mens.html">Men's</a></li>
+            <li><a href="womens.html">Women's</a></li>
+            <li class="nav-divider">|</li>
+            <li><input type="text" placeholder="Search" id="search" /></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-divider">|</li>
+          </ul>
+        </div>
+        <div class="nav-icons">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="Cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
+          <label for="hamburger-menu" class="navburger"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav>
+            <ul>
+              <li><a href="mens.html">Men's</a></li>
+              <li><a href="womens.html">Women's</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <main class="cart-main">
+      <h1>Cart & Checkout</h1>
+      <section class="cart">
+        <div class="cart-left">
+          <form action="submit.php" method="GET">
+            <div class="cart-personal-info">
+              <h2>Personal information</h2>
+              <label for="first-name">First name: </label>
+              <input
+                type="text"
+                name="First name"
+                id="first-name"
+                placeholder="First name"
+              />
+              <label for="last-name">Last name: </label>
+              <input
+                type="text"
+                name="Last name"
+                id="last-name"
+                placeholder="Last name"
+              />
+              <label for="address">Address:</label>
+              <input
+                type="text"
+                name="street-name"
+                id="street-name"
+                placeholder="Street name"
+              />
+              <label for="street number">Street number:</label>
+              <input
+                type="text"
+                name="Street number"
+                id="street-number"
+                placeholder="#"
+              />
+              <label for="city-name">City name:</label>
+              <input
+                type="text"
+                name="City name"
+                id="city-name"
+                placeholder="City name"
+              />
+              <label for="zip-code">Zip code:</label>
+              <input
+                type="text"
+                name="Zip code"
+                id="zip-code"
+                placeholder="Zip code"
+              />
+              <label for="tel">Phone number:</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Your telephone number"
+              />
+              <label for="e-mail">E-mail:</label>
+              <input
+                type="email"
+                name="E-mail"
+                id="e-mail"
+                placeholder="Your e-mail address"
+              />
+            </div>
+            <div class="cart-delivery">
+              <h2>Delivery information</h2>
+              <label>Delivery company:</label>
+              <select name="delivery" id="delivery">
+                <option value="postnord">PostNord</option>
+                <option value="Posten">Posten</option>
+                <option value="DHL">DHL</option>
+              </select>
+              <label for="delivery-date">Delivery date:</label>
+              <input type="date" id="delivery-date" name="delivery-date" />
+            </div>
+            <div class="cart-payment">
+              <h2>Payment information</h2>
+              <label for="card-name">Name on card:</label>
+              <input
+                type="text"
+                name="Card name"
+                id="card-name"
+                placeholder="Full name"
+              />
+              <label for="card-number">Card number:</label>
+              <input
+                type="text"
+                name="Card number"
+                id="card-number"
+                placeholder="Card number"
+              />
+              <label for="cvc">CVC number:</label>
+              <input type="text" name="cvc" id="cvc" placeholder="CVC number" />
+              <label for="expiry-date">Card's expiry date:</label>
+              <input type="date" name="Expiray date" id="expiray-date" />
+            </div>
+            <div class="cart-place-order">
+              <input type="submit" class="order-cta-button" value="Confirm" />
+            </div>
+            <div class="cart-payment"></div>
+          </form>
+        </div>
+        <div class="cart-right">
+          <div class="cart-products-info">
+            <h2>Your cart</h2>
+            <div class="cart-products-info-grid">
+              <figure class="cart-products-info-grid-img">
+                <img src="images/jacket1.jpg" alt="Woman in yellow jacket" />
+              </figure>
+              <div class="cart-summary">
+                <div class="cart-summary-line">
+                  <p>Model:</p>
+                  <p class="cart-summary-line-column-right">
+                    Rainydays Classic
+                  </p>
+                </div>
+                <div class="cart-summary-line">
+                  <p>Size:</p>
+                  <p class="cart-summary-line-column-right">Medium</p>
+                </div>
+                <div class="cart-summary-line">
+                  <p>Color:</p>
+                  <p class="cart-summary-line-column-right">Yellow</p>
+                </div>
+                <div class="cart-summary-line">
+                  <p>Price:</p>
+                  <p class="cart-summary-line-column-right">500kr</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-summary">
+            <hr />
+            <div class="cart-summary-line">
+              <p>Sum cart:</p>
+              <p class="cart-summary-line-column-right">500kr</p>
+            </div>
+            <div class="cart-summary-line">
+              <p>Shipping:</p>
+              <p class="cart-summary-line-column-right">100kr</p>
+            </div>
+            <hr />
+            <div class="cart-summary-line">
+              <p>Total:</p>
+              <p class="cart-summary-line-column-right">600kr</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="images/brand-logo.png" alt="Brand logo" />
+      <p>Copyright &copy; 2022</p>
+    </footer>
+  </body>
+</html>
